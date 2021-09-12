@@ -32,7 +32,3 @@ if (presentHour == hour) {
 } else if (presentHour < hour) {
     $("textarea.description").toggleClass( "future");
 } else {};
-
-
-
-
