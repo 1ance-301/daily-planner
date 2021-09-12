@@ -21,4 +21,3 @@ https://1ance-301.github.io/daily-planner/
 - Edited with ❤︎ by Lance Bontrager(https://github.com/1ance-301)
 
 ## Website Screenshot
-<img width="1440" alt="Screen Shot 2021-09-12 at 11 51 37 AM" src="https://user-images.githubusercontent.com/87950314/132994441-cb347bcf-9157-4892-bbc9-712cc22a1186.png">

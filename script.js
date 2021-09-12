@@ -1,5 +1,5 @@
 // function to display tasks saved in local storage
-var task = $("textarea.description")
+var task = $("textarea.description").text()
 function loadTasks() {
     var storedTask = localStorage.getItem("task");
     var taskText = JSON.parse(storedTask);
@@ -23,12 +23,15 @@ function saveTask() {
 
 // funtion to change task descption background color depending on the time of day
 var presentHour = moment().format('h A');
+var timeHour = presentHour.text
 var hour = $("p.time-block").text();
 
-if (presentHour == hour) {
-    $("textarea.description").toggleClass( "present");
-} else if (presentHour > hour) {
+if (task = "") {
+    $("textarea.description").removeClass( "future", "past", "present");
+} else if (presentHour > timeHour) {
     $("textarea.description").toggleClass( "past");
-} else if (presentHour < hour) {
+} else if (presentHour < timeHour) {
     $("textarea.description").toggleClass( "future");
-} else {};
+} else if (presentHour == timeHour) {
+    $("textarea.description").toggleClass( "present");
+};
